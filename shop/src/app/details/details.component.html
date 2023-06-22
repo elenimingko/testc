@@ -1,0 +1,15 @@
+<h1 class="head">Product Details</h1>
+<div *ngIf="product">
+    <div class="card" style="width: 18rem;">
+    <img src="{{product.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p>The name is: {{product.name}} </p>
+      <p> {{product.name}} is {{product.age}} year old and is a {{product.type}}</p>
+      <p>The price of {{product.name}} ist {{product.price}} $</p>
+      <p>{{product.name}} is {{product.gender}}</p>
+      <button (click)="addtoCart()" class="btn btn-primary">Add to card</button>
+    </div>
+  </div>
+
+</div>
+

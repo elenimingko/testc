@@ -1,0 +1,12 @@
+<h1 class="heading">Your cart</h1>
+<div *ngFor="let x of cart"> 
+    <div class="card" style="width: 18rem;">
+        <img src="{{ x.image }} " class="card-img-top" alt="...">
+       <div class="card-body">
+          <h5 class="card-title">Name:{{ x.name }}  </h5>
+          <p class="card-text">Price: {{ x.price }} $ </p>
+          <p>total {{total}} </p>
+       </div>
+     </div>
+
+</div>
